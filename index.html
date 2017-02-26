@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sai Silpa Surapaneni</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="landing" id="ng-app" data-ng-app="myApp">
+		<!-- Header -->
+			<header id="header" ng-class="{'homeHeader': className}">
+				<h1 ng-class="{active: $route.current.$$route.activetab === 'home'}"><a href="#/home">Home</a></h1>
+				<nav id="nav">
+					<ul>
+						<li ng-class="{active: $route.current.$$route.activetab === 'experience'}"><a href="#/experience">Experience</a></li>
+						<li ng-class="{active: $route.current.$$route.activetab === 'technologies'}"><a href="#/technologies">Technologies</a></li>
+						<li ng-class="{active: $route.current.$$route.activetab === 'about'}"><a href="#/about">About</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<div ng-view></div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="4u 6u(medium) 12u$(small)">
+							<h3>Address</h3>
+							<ul class="alt">
+								<li>Charlotte<br>
+								North Carolina</li>
+							</ul>
+						</section>
+						<section class="4u 6u$(medium) 12u$(small)">
+							<h3>Mail</h3>
+							<ul class="alt">
+								<li>
+									<a href="#">silpa.surapaneni@gmail.com</a>
+								</li>
+							</ul>
+						</section>
+						<section class="4u$ 12u$(medium) 12u$(small)">
+							<h3>Contact Us</h3>
+							<ul class="icons">
+								<li><a href="https://github.com/saisurapaneni/" class="icon rounded fa-github"><span class="label">Github</span></a></li>
+								<li><a href="https://plus.google.com/114090443948889896842" class="icon rounded fa-google-plus"><span class="label">Google+</span></a></li>
+								<li><a href="https://www.linkedin.com/in/sai-silpa-surapaneni-98866273/" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://www.instagram.com/shilpachowdary/" class="icon rounded fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://www.facebook.com/SilpaSurapaneniChowdary" class="icon rounded fa-facebook"><span class="label">Facebook</span></a></li>
+							</ul>
+						</section>
+					</div>
+					<ul class="copyright">
+						<li>&copy; Silpa. All rights reserved.</li>
+						<li>Images: Unsplash</li>
+					</ul>
+				</div>
+			</footer>
+			<link rel="stylesheet" href="css/set1.css" />
+			<script src="js/jquery.min.js"></script>
+			<script src="js/skel.min.js"></script>
+			<script src="js/skel-layers.min.js"></script>
+			<script src="js/init.js"></script>
+			<script src="js/angular.js"></script>
+			<script src="js/angular-route.min.js"></script>
+			<script src="app.js"></script>
+	</body>
+</html>
